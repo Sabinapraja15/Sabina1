@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.mi">
     <link rel="stylesheet" href="home.css">
     <title>Navigation Menu Bar with Animated Login Form Page</title>
 </head>
 <body>
-    
+    <div class="container">
+  <nav><a href="#" class="logo">Logo</a>
+   <ul>
+    <li><a href="#" class="checked">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Updates</a></li>
+    <li><a href="#">Contact</a></li>
+   </ul>
+   <span class="fa fa-times cancelBtn"></span>
+   <div class="loginBtn"><span class="fa fa-key"></span>Login</div>
+ </nav>
+ <div class="formpage">
+    <form action="">
+        <h2>Login</h2>
+        <div class="entryfield">
+            <input type="text" placeholder="Username" required>
+            <span class=" fa fa-user"></span>
+        </div>
+        <div class="entryfield">
+            <input type="password" placeholder="Password" required>
+            <span class=" fa fa-lock"></span>
+        </div>
+        <div class="RemForPw">
+            <p><input type="checkbox">Remember me</p>
+            <a href="#">Forget password?</a>
+        </div>
+        <div class="entryfield">
+            <input type="submit" value="Login" >
+        </div>
+        <div class="newAccout">
+            <span>Don't hava an accout?<a href="#">Signup now</a></span>
+        </div>
+    </form>
+ </div>
+</div>
+<script>
+    const cancelBtn = document.querySelector('.cancelBtn');
+    const loginBtn = document.querySelector('.loginBtn');
+    const formpage = document.querySelector('.formpage');
+
+    loginBtn.addEventListener('click',()=>{
+        loginBtn.style.display = "none";
+        cancelBtn.style.display = "block";
+        formpage.style.scale="1";
+        formpage.style.transition="0.3s ease-in";
+    });
+    cancelBtn.addEventListener('click',()=>{
+        cancelBtn.style.display = "none";
+         loginBtn.style.display = "block";
+         formpage.style.scale="0";
+         formpage.style.transition="0s";
+    });
+</script>
 </body>
 </html>
