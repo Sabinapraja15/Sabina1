@@ -16,19 +16,17 @@
 }
 nav{
     display: flex;
-    width: 100%;
     justify-content: space-between;
     background-color: black;
     color: #fff;
-    padding: 0 80px;
-    height: 80px;
-    line-height: 80px;
+    padding: 20px;
 }
 nav .logo{
+margin-right: 60px;
 color: #fff;
 text-decoration:none ;
 font-size: 2.5em;
-font-weight: 800;
+font-weight: 600;
 letter-spacing: 2px;
 }
 ul{
@@ -49,14 +47,13 @@ ul li:hover a, .checked{
 }
 .cancelBtn,
 .loginBtn{
-    position: relative;
-    font-size: 1.8em;
+    position:"relative";
+    font-size:1.8em ;
     cursor: pointer;
-    width:150px;
-    height: 50px;
-    line-height: 50px;
     text-align: center;
-    margin: auto;
+    width:100px;
+    height: 40px;
+    line-height: 40px;
 }
 .cancelBtn{
 display:none;
@@ -65,7 +62,7 @@ width: 50px;
 
 }
 .loginBtn{
-    background-color: #00ff27;
+    background-color: #065f0d;
 }
 .formpage{
     position: fixed;
@@ -81,15 +78,15 @@ scale: 0;
 }
 form h2{
     text-align: center;
-    font-size: 6em;
-    letter-spacing: 5px;
+    font-size: 3em;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 .entryfield{
     position: relative;
-    height: 90px;
+    height: 80px;
     width: 700px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 .entryfield input{
@@ -149,7 +146,7 @@ font-size: 1.2em;
     text-align: center;
     font-size: 1.3em;
 }
-newAccount a{
+.newAccount a{
     text-decoration: none;
     color:#18a2f2 ;
 }
