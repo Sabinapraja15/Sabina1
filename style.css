@@ -22,7 +22,7 @@ body{
     font-weight: bold;
 }
 .topnav .icon{
-    display: none;s
+    display: none;
 }
 @media screen and (max-width:600px){
     .topnav a:not(:first-child) {display: none;}
